@@ -282,6 +282,7 @@ local htmlStyleMethods =
 local htmlFrameHandlers = 
 { ["OnHyperlinkClick"] = 
     function(self, link, text, ...)
+      ResetCursor();
       if    self.widget:GetClickHandler()
       then  return self.widget:FireClickHandler(link, text, ...)
       else  local  protocolName, dest = link:match("^(%a+)://(.+)");
