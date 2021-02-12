@@ -8,7 +8,7 @@
 
 local AceGUI         = LibStub("AceGUI-3.0");
 local widget_type    = "LMD30_Description";
-local widget_version = 3;
+local widget_version = 4;
 
 local LMD = LibStub("LibMarkdown-1.0");
 LMD = not LMD and error("[|cffff0000AceMarkdownWidget|r] Missing LibMarkdown-1.0");
